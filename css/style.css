@@ -14,7 +14,7 @@ body{
   font-size: 16px;
   margin: 1.2em;
   font-family: 'Andika', sans-serif;
-  background-size: cover;
+  background-size: cover ;
   background-position: center;
   background-attachment: fixed;
   background-color: #DDDDDD;
@@ -49,8 +49,8 @@ a{
 }
 
 table{
-  border-radius: 10px;
   border: 2px solid #000000;
+  border-radius: 10px;
   margin: auto;
 }
 
@@ -65,31 +65,19 @@ table{
 }
 
 .rowhead{
-  border-right: 2px, #000000;
-  border-top: 2px, #000000;
+  border-top: 2px, solid #000000;
+  border-right: 2px, solid #000000;
   padding: 10px;
   vertical-align: middle;
   text-align: center;
 }
 
 td{
-  padding: 10px;
   text-align: center;
-  border-top: 2px solid #000000;
   vertical-align: middle;
+  padding: 10px;
+  border-top: 2px solid #000000;
   border-width: 2px;
-}
-
-tr:nth-child(even){
-  background-color: #D1D1D1;
-}
-
-tr:nth-child(odd){
-  background-color: transparent;
-}
-
-*:focus{
-  border: 3px dashed #417243;
 }
 
 thead tr:first-child th:first-child{
@@ -104,8 +92,24 @@ tbody tr:last-child td:first-child{
   border-bottom-left-radius: 10px;
 }
 
+td:nth-child(2), th:nth-child(2) {
+  border-left: solid 2px black;
+}
+
 tbody tr:last-child td:last-child{
   border-bottom-right-radius: 10px;
+}
+
+tr:nth-child(even){
+  background-color: #D1D1D1;
+}
+
+tr:nth-child(odd){
+  background-color: transparent;
+}
+
+*:focus{
+  border: 3px dashed #417243;
 }
 
 tbody tr:hover{
